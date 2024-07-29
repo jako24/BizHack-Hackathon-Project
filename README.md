@@ -29,7 +29,7 @@ This project is a sketch and idea developed during a Hackathon organized by Info
 
 1. **OpenAI API Key**: Set up the OpenAI API key as an environment variable. This key is required to access the OpenAI API to generate textual summaries. Add the following lines to your `.bashrc`, `.zshrc`, or equivalent shell configuration file:
    ```bash
-   export OPENAI_API_KEY='your_openai_api_key_here'
+   openai.api_key = os.getenv('OPENAI_API_KEY', 'your_openai_api_key_here')'
    ```
 
    Replace `your_openai_api_key_here` with your actual OpenAI API key. Then, run the following command to load the new environment variable:
